@@ -1,0 +1,4 @@
+user=root
+psssword=9342172
+dburl=jdbc:mysql://localhost:8080/coursejdbc
+useSSL=false
