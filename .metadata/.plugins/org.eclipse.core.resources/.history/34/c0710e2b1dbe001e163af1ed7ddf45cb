@@ -91,6 +91,7 @@ public class SellerDaoJDBC implements SellerDao {
 
 	@Override
 	public List<Seller> findByDepartment(Department department) {
+
 		PreparedStatement st = null;
 		ResultSet rs = null;
 		try {
@@ -102,7 +103,6 @@ public class SellerDaoJDBC implements SellerDao {
 					+ "ORDER BY Name");
 
 			st.setInt(1, department.getId());
-
 			rs = st.executeQuery();
 
 			List<Seller> list = new ArrayList<>();
@@ -120,9 +120,10 @@ public class SellerDaoJDBC implements SellerDao {
 				Seller obj = instantiateSeller(rs, dep);
 				list.add(obj);
 			}
-			return list;
+			return null;
 		} catch (SQLException e) {
 			throw new DbException(e.getMessage());
+
 		} finally {
 			DB.closeStatement(st);
 			DB.closeResultSet(rs);
