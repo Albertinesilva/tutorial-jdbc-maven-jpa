@@ -12,7 +12,6 @@ import java.util.Map;
 
 import db.DB;
 import db.DbException;
-import db.DbIntegrityException;
 import model.dao.SellerDao;
 import model.entities.Department;
 import model.entities.Seller;
@@ -92,15 +91,13 @@ public class SellerDaoJDBC implements SellerDao {
 
 			st.setInt(1, id);
 
-			int rows = st.executeUpdate();
-			if (rows == 0) {
-				throw new DbIntegrityException("No seller found with id: " + id);
-			}
-
-		} catch (SQLException e) {
-			throw new DbException(e.getMessage());
+			st.executeUpdate();
 			
-		} finally {
+		} 
+		catch (SQLException e) {
+			throw new DbException(e.getMessage());
+		}
+		finally {
 			DB.closeStatement(st);
 		}
 	}
