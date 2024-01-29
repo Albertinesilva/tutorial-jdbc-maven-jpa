@@ -1,5 +1,6 @@
 package application;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
@@ -31,16 +32,10 @@ public class Program2 {
 		System.out.println("\n\tInserted! New id: " + newDepartment.getId());
 		
 		System.out.println("\n\t=== TEST 4: department update =====");
-		newDepartment = departmentDao.findById(6);
-		newDepartment.setName("Estoque");
+		newDepartment = departmentDao.findById(1);
+		newDepartment.setName("Banco de Dados");
 		departmentDao.update(newDepartment);
 		System.out.println("\n\tUpdate completed");
-		
-		System.out.println("\n\t=== TEST 5: department delete =====");
-		System.out.print("\n\tEnter id for delete test: ");
-		int id = sc.nextInt();
-		departmentDao.deleltById(id);
-		System.out.println("\n\tDelete completed!");
 
 		sc.close();
 
