@@ -27,15 +27,9 @@ public class Program2 {
 		}
 		
 		System.out.println("\n\t=== TEST 3: department insert =====");
-		Department newDepartment = new Department(null, "Pedagogia");
+		Department newDepartment = new Department(null, "Music");
 		departmentDao.insert(newDepartment);
 		System.out.println("\n\tInserted! New id: " + newDepartment.getId());
-		
-		System.out.println("\n\t=== TEST 4: department update =====");
-		newDepartment = departmentDao.findById(1);
-		newDepartment.setName("Banco de Dados");
-		departmentDao.update(newDepartment);
-		System.out.println("\n\tUpdate completed");
 
 		sc.close();
 

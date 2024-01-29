@@ -33,7 +33,7 @@ public class Program2 {
 		
 		System.out.println("\n\t=== TEST 4: department update =====");
 		newDepartment = departmentDao.findById(1);
-		newDepartment.setName("Banco de Dados");
+		newDepartment.setName("Marta Waine");
 		departmentDao.update(newDepartment);
 		System.out.println("\n\tUpdate completed");
 
