@@ -63,3 +63,53 @@ jdbc/
 │   └── (manipulação da conexão com o banco de dados)
 └── db.properties (arquivo de configuração do banco de dados)
 
+Exemplos de Funcionalidade
+Recuperar Dados
+Script SQL: material de apoio
+Objetos: Statement, ResultSet
+Métodos de navegação do ResultSet:
+first(): Move para a primeira linha.
+beforeFirst(): Move para a posição antes da primeira linha.
+next(): Move para a próxima linha.
+absolute(int): Move para uma posição específica.
+Objetivos:
+Recuperar departamentos do banco de dados.
+Inserir Dados
+PreparedStatement:
+Execute operações de inserção no banco de dados.
+Exemplo de uso: Recuperação de ID após inserção.
+Atualizar Dados
+PreparedStatement: Atualize dados no banco com segurança.
+Deletar Dados
+PreparedStatement: Delete dados de forma segura.
+Transações
+API:
+setAutoCommit(false): Desabilitar autocommit.
+commit(): Confirmar transações.
+rollback(): Reverter transações.
+Padrão DAO (Data Access Object)
+Cada entidade terá uma classe DAO responsável por fazer o acesso aos dados relacionados àquela entidade.
+
+Exemplo:
+
+ClienteDao: Para acesso aos dados do cliente.
+ProdutoDao: Para acesso aos dados do produto.
+A implementação do DAO deve ser feita em uma interface, e a injeção de dependência pode ser realizada usando o padrão de projeto Factory.
+
+Exemplos de Implementação
+SellerDaoJDBC:
+
+Exemplo de implementação de DAO para a entidade Seller.
+findById:
+
+Consulta de dados utilizando a junção entre as tabelas seller e department.
+findByDepartment:
+
+Consulta de vendedores filtrados pelo ID do departamento.
+findAll:
+
+Consulta de todos os vendedores, ordenados pelo nome.
+Insert/Update/Delete:
+
+Exemplos de consultas SQL para inserção, atualização e exclusão de dados.
+
