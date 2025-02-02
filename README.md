@@ -4,6 +4,10 @@
 
 Este repositório contém os exercícios e exemplos do curso de JDBC (Java Database Connectivity), abrangendo a teoria e prática da conexão de bancos de dados com Java, utilizando MySQL e o padrão de projeto DAO (Data Access Object).
 
+# Visão geral do JDBC
+
+![Visão geral do JDBC](visão_geral_JDBC.png)
+
 ## Objetivos do Curso
 
 - Conhecer os principais recursos do JDBC na teoria e prática.
@@ -87,8 +91,12 @@ API:
 setAutoCommit(false): Desabilitar autocommit.
 commit(): Confirmar transações.
 rollback(): Reverter transações.
-Padrão DAO (Data Access Object)
+Padrão de projeto DAO (Data Access Object) 
 Cada entidade terá uma classe DAO responsável por fazer o acesso aos dados relacionados àquela entidade.
+
+# Modelo de domínio Chess System
+
+![Padrão de projeto DAO (Data Access Object) ](padrão_de_projeto_DAO.png)
 
 Exemplo:
 
@@ -98,6 +106,10 @@ A implementação do DAO deve ser feita em uma interface, e a injeção de depen
 
 Exemplos de Implementação
 SellerDaoJDBC:
+
+# Modelo de domínio department e seller
+
+![Modelo de domínio department e seller](Entities_seller_department.png)
 
 Exemplo de implementação de DAO para a entidade Seller.
 findById:
