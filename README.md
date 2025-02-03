@@ -1,6 +1,6 @@
 <h1 align="center">🔗 Acesso a Banco de Dados com JDBC e Padrão de Projeto DAO </h1>
 
-<h2 align="center">Curso: Programação Orientada a Objetos com Java - Udemy </h2>
+<h2 align="center">Curso Udemy: Programação Orientada a Objetos com Java </h2>
 
 Este repositório contém os exercícios e exemplos do curso de JDBC (Java Database Connectivity), abrangendo a teoria e prática da conexão de bancos de dados com Java, utilizando MySQL e o padrão de projeto DAO (Data Access Object).
 
