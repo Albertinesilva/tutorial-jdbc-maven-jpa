@@ -182,6 +182,6 @@ Para organizar o acesso aos dados de forma modular e reutilizável, apliquei o *
 
 Além da implementação original, foram realizadas modificações na organização dos packages para aprimorar a estrutura e a legibilidade do código. Além disso, a interface de exibição no console foi ajustada para proporcionar uma melhor experiência visual e usabilidade.
 
-## Autor
-
-👤 **Albert Silva**
+| 🌎 LinkedIn | 👤 **Autor** |
+|------------|---------------|
+| [LinkedIn](https://www.linkedin.com/in/albert-backend-java-spring-boot/) | [Albert Silva](https://www.linkedin.com/in/albert-backend-java-spring-boot/) |
